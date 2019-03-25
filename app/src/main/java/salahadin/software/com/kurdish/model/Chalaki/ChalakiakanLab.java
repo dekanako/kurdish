@@ -5,6 +5,7 @@ import android.content.Context;
 import java.util.ArrayList;
 import java.util.List;
 
+import salahadin.software.com.kurdish.model.Rahenan.Rahenan;
 import salahadin.software.com.kurdish.model.Rahenan.Rahenanakan;
 
 public class ChalakiakanLab
@@ -30,14 +31,16 @@ public class ChalakiakanLab
     {
         List<String> prsyarakanyChalakiYakamBabat = new ArrayList<>();
         prsyarakanyChalakiYakamBabat.add("وەرە---->وە...رە");
-        prsyarakanyChalakiYakamBabat.add("….زۆزان---->زۆ");
-        prsyarakanyChalakiYakamBabat.add("...نەوزاد---->نەو");
-        prsyarakanyChalakiYakamBabat.add("نانەوا---->….نە");
-        prsyarakanyChalakiYakamBabat.add("…….باران---->با");
-        prsyarakanyChalakiYakamBabat.add(" …. …..---->مامە");
-        prsyarakanyChalakiYakamBabat.add(" گەڵا----> گە");
-        prsyarakanyChalakiYakamBabat.add("….باوک---->با");
-        prsyarakanyChalakiYakamBabat.add("کەڵەباب---->….باب");
+        prsyarakanyChalakiYakamBabat.add("زۆزان---->زۆ...");
+        prsyarakanyChalakiYakamBabat.add("نازه‌---->نا...");
+        prsyarakanyChalakiYakamBabat.add("نەوزاد---->نەو...");
+        prsyarakanyChalakiYakamBabat.add("نانەوا---->...نە");
+        prsyarakanyChalakiYakamBabat.add("باران---->با...");
+        prsyarakanyChalakiYakamBabat.add("مامە---->... ");
+        prsyarakanyChalakiYakamBabat.add(" گەڵا----> گە...");
+        prsyarakanyChalakiYakamBabat.add(" گەرما----> گە...");
+        prsyarakanyChalakiYakamBabat.add("باوک---->با...");
+        prsyarakanyChalakiYakamBabat.add("کەڵەباب---->...باب");
 
         List<String> prsyarakanyChalakiDwamYakamBabat = new ArrayList<>();
         prsyarakanyChalakiDwamYakamBabat.add("س،ە،ر،د،ا،ر=(   )");
@@ -84,7 +87,85 @@ public class ChalakiakanLab
                 ,null));
 
         chalakiakanList.add(new Chalakiakan(chalakiakanyYakamBabat,3));
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        List<String>prsyarakaniChalaki1Babaty2 = new ArrayList<>();
+        prsyarakaniChalaki1Babaty2.add("١. ئازاد دیوار رەنگ دەکات\n" +
+                "ئازاد……...یە\n");
+        prsyarakaniChalaki1Babaty2.add("٢. کاوە ئوتومبێل لێدەخوڕێ\n" +
+                "کاوە……...ە\n");
+        prsyarakaniChalaki1Babaty2.add("٣. نەوزاد لە دوکان شت دەفرۆشێ" +
+                "نەوزاد…………..ە\n");
+        prsyarakaniChalaki1Babaty2.add("٤. کارزان مقاست و شانە بەکاردێنێ" +
+                "کارزان……….ە\n");
+
+        List<Chalaki> chalaki1Babat2 = new ArrayList<>();
+        chalaki1Babat2.add(new Chalaki(0,
+                null,
+                prsyarakaniChalaki1Babaty2,
+                ".خوێندکاری خۆشەویست بڕوانە ئەم وێنانە، لە پاشدا ناوەکانیان لە بۆشاییەکان دابنێ",
+                0,
+                0,
+                "(شوفێر،سەرتاش،بۆیاغچی، دوکاندار)"));
+
+        chalakiakanList.add(new Chalakiakan(chalaki1Babat2,17));
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        List<String>prsyarakaniChalaki1Babaty3 = new ArrayList<>();
+        prsyarakaniChalaki1Babaty3.add("تۆ لە خوێندنگە چۆن ڕۆژباش لە مامۆستا و هاوڕێکانت دەکەیت؟");
+        prsyarakaniChalaki1Babaty3.add(" قوتابی خۆشەویست ،باسی ئەوەمان بۆ بکە، کە تۆ لەنێوان پشوی وانەکانتدا چی دەکەیت؟");
+
+        List<Chalaki>chalakiBabaty3 = new ArrayList<>();
+        chalakiBabaty3.add(new Chalaki(0
+                ,null,prsyarakaniChalaki1Babaty3
+        ,"مامۆستا دەپرسێت:"
+                ,0
+                ,0
+                ,null));
+        chalakiakanList.add(new Chalakiakan(chalaki1Babat2,21));
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        List<String>prsyarakaniChalaki1babaty4 = new ArrayList<>();
+        prsyarakaniChalaki1babaty4.add("١. …..لەگەڵ گۆرانی لێدەدرێت");
+        prsyarakaniChalaki1babaty4.add("٢. …...ئامێرێکی ژێدارە");
+        prsyarakaniChalaki1babaty4.add("٣. مۆسیقا…..دەخاتە دڵی مرۆڤەوە");
+        prsyarakaniChalaki1babaty4.add("٤. …...ئامێرێکی فوودارە");
+
+        List<Chalaki>chalakiBabaty4 = new ArrayList<>();
+        chalakiBabaty4.add(new Chalaki(24,
+                null,
+                prsyarakaniChalaki1babaty4,
+                "قوتابی ژیر، بە یەکێک لە وشەکانی ناو لاکێشەکەی لای خوارەوە"+
+                        "\n ئەم بۆشاییانە پڕ بکەوە:",
+                0,
+                0,
+                "(گیتاڕ، شمشاڵ، مۆسیقا، خۆشی)"));
+        chalakiakanList.add(new Chalakiakan(chalakiBabaty4,24));
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        List<String>prsyarakaniChalaki1babaty5 = new ArrayList<>();
+        prsyarakaniChalaki1babaty5.add("(قوتابخانە وەکو ماڵ وایە، دەبێ پارێزگاری بکەین و مامۆستاکانمان خۆش بوێ)");
+
+        List<Chalaki> chalakiakanyBabaty5 = new ArrayList<>();
+        chalakiakanyBabaty5.add(new Chalaki(0,
+                null,
+                prsyarakaniChalaki1babaty5,
+                ":خوێندکاری خۆشەویست، سێجار ئەم ڕستانەی لای خوارەوە لە تێنووسەکەت بنووسەوە",
+                0,
+                0,
+                null
+                ));
+        List<String>prsyarakaniChalaki2Babaty5 = new ArrayList<>();
+        prsyarakaniChalaki2Babaty5.add("(قوتابخانە ڕووناکیە، زانست چرایە، مامۆستا هاوڕێیە)");
+        chalakiakanyBabaty5.add(new Chalaki(26,
+                null,
+                prsyarakaniChalaki2Babaty5,
+                "ئەم ڕستانەی خواره‌وه‌ چوارجار لە تێنووسەکەت بنووسەوە، پاشان لەگەڵ مامۆستاکەتدا گفتووگۆیان لەسەر بکە",
+                1,0,null));
+        chalakiakanList.add(new Chalakiakan(chalakiakanyBabaty5,26));
+
     }
+
 
 
     public Chalakiakan getChalakiakan(int para)

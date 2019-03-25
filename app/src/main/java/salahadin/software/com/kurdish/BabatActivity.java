@@ -72,7 +72,7 @@ public class BabatActivity extends AppCompatActivity
             SubMenu subMenu = menu.addSubMenu(Menu.NONE,321,Menu.NONE,"چالاكیه‌كان");
             for (int z = 0;z<sizeChalaki;z++)
             {
-                int num = chalakis.get(z).getLaparayChalaki() + 1;
+                int num = chalakis.get(z).getZhmarayChalaki()  + 1;
                 subMenu.add(Menu.NONE,z,Menu.NONE," چالاكی " + num);
             }
         }
