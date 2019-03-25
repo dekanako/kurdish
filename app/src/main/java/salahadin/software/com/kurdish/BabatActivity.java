@@ -38,7 +38,6 @@ public class BabatActivity extends AppCompatActivity
 
         mPage = getIntent().getIntExtra(Intent.EXTRA_INTENT,0);
         mBabat = BabatsProvider.getBabat(mPage);
-        System.out.println("TESTTT " + mPage);
 
         mNawyBabat = (TextView) findViewById(R.id.nawy_babat_view);
         mContentyBabat = (TextView)findViewById(R.id.content_view);
@@ -106,6 +105,7 @@ public class BabatActivity extends AppCompatActivity
                 }
                 else
                 {
+                    System.out.println("TESTTTT " + mBabat.getLaparayBabat());
                     Intent intent2 = new Intent(this,ChalakiActivity.class);
                     intent2.putExtra(EXTRA_INT,mBabat.getLaparayBabat());
                     intent2.putExtra(Intent.EXTRA_INTENT,item.getItemId());

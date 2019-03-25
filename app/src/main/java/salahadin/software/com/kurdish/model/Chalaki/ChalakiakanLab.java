@@ -5,8 +5,8 @@ import android.content.Context;
 import java.util.ArrayList;
 import java.util.List;
 
-import salahadin.software.com.kurdish.model.Rahenan.Rahenan;
-import salahadin.software.com.kurdish.model.Rahenan.Rahenanakan;
+import salahadin.software.com.kurdish.R;
+
 
 public class ChalakiakanLab
 {
@@ -24,10 +24,10 @@ public class ChalakiakanLab
     }
     private ChalakiakanLab(Context context)
     {
-        initChalakiakan();
+        initChalakiakan(context);
     }
 
-    private void initChalakiakan()
+    private void initChalakiakan(Context context)
     {
         List<String> prsyarakanyChalakiYakamBabat = new ArrayList<>();
         prsyarakanyChalakiYakamBabat.add("وەرە---->وە...رە");
@@ -108,7 +108,20 @@ public class ChalakiakanLab
                 0,
                 "(شوفێر،سەرتاش،بۆیاغچی، دوکاندار)"));
 
-        chalakiakanList.add(new Chalakiakan(chalaki1Babat2,17));
+        List<String>prsyarakaniChalaki2babaty2 = new ArrayList<>();
+        prsyarakaniChalaki2babaty2.add("................1");
+        prsyarakaniChalaki2babaty2.add("................2");
+        prsyarakaniChalaki2babaty2.add("................3");
+        prsyarakaniChalaki2babaty2.add("................4");
+        chalaki1Babat2.add(new Chalaki(1,
+                context.getDrawable(R.drawable.special_chalaki_photo_animals),
+                prsyarakaniChalaki2babaty2,
+                "خوێندکاری خۆشەویست بڕوانە ئەم وێنانە، لە پاشدا ناوەکانیان لە بۆشاییەکان دابنێ",
+                1,
+                0,
+                null));
+
+        chalakiakanList.add(new Chalakiakan(chalaki1Babat2,16));
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         List<String>prsyarakaniChalaki1Babaty3 = new ArrayList<>();
@@ -122,7 +135,15 @@ public class ChalakiakanLab
                 ,0
                 ,0
                 ,null));
-        chalakiakanList.add(new Chalakiakan(chalaki1Babat2,21));
+
+        chalakiBabaty3.add(new Chalaki(1,
+                context.getDrawable(R.drawable.special_chalaki_photo_clock),
+                null,
+                "هەوڵبدە کاتەکانی ئەم کاتژمێرانەی خوارەوە بخوێنیتەوە:",
+                1,
+                0,null));
+
+        chalakiakanList.add(new Chalakiakan(chalakiBabaty3,21));
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         List<String>prsyarakaniChalaki1babaty4 = new ArrayList<>();
         prsyarakaniChalaki1babaty4.add("١. …..لەگەڵ گۆرانی لێدەدرێت");
@@ -163,6 +184,7 @@ public class ChalakiakanLab
                 "ئەم ڕستانەی خواره‌وه‌ چوارجار لە تێنووسەکەت بنووسەوە، پاشان لەگەڵ مامۆستاکەتدا گفتووگۆیان لەسەر بکە",
                 1,0,null));
         chalakiakanList.add(new Chalakiakan(chalakiakanyBabaty5,26));
+
 
     }
 

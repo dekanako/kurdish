@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -26,16 +27,29 @@ public class ChalakiActivity extends AppCompatActivity
     private TextView mHintTextView;
     private RecyclerView mRahenanRecyclerView;
     private ChalakiAdapter mAdapter;
+    private ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chalaki);
-
         mPage = getIntent().getIntExtra(Intent.EXTRA_INTENT,0);
         mChalakiNumber = getIntent().getIntExtra("hello",0);
-
         mChalaki = ChalakiakanLab.getInstance(this).getChalakiakan(mChalakiNumber).getmChalakiakan().get(mPage);
+
+        super.onCreate(savedInstanceState);
+
+        if (mChalaki.getmDrawable() == null)
+        {
+            setContentView(R.layout.activity_chalaki);
+        }
+        else
+        {
+            setContentView(R.layout.activity_special_chalaki);
+            imageView = findViewById(R.id.chalaki_wena);
+            imageView.setImageDrawable(mChalaki.getmDrawable());
+
+        }
+
+
 
         mChalakiTextView = findViewById(R.id.chalaki_id_title);
         mPrsyarTextView = findViewById(R.id.prsyar_chalaki_title_id);
@@ -49,11 +63,15 @@ public class ChalakiActivity extends AppCompatActivity
 
     private void initChalakiList()
     {
-        mRahenanRecyclerView = findViewById(R.id.list_chalaki);
-        mAdapter = new ChalakiAdapter(mChalaki.getmPrsyarakan());
-        mRahenanRecyclerView.setAdapter(mAdapter);
-        mRahenanRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        mRahenanRecyclerView.setHasFixedSize(true);
+        if (mChalaki.getmPrsyarakan() != null)
+        {
+
+            mRahenanRecyclerView = findViewById(R.id.list_chalaki);
+            mAdapter = new ChalakiAdapter(mChalaki.getmPrsyarakan());
+            mRahenanRecyclerView.setAdapter(mAdapter);
+            mRahenanRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+            mRahenanRecyclerView.setHasFixedSize(true);
+        }
 
     }
 
