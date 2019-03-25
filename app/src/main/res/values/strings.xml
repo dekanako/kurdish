@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">kurdish</string>
+    <string name="ff">
+دەرچووی پۆلی یەکەمم
+وا لە پۆلی دووەمم
+       یاخوا پیرۆز بێ لێمان
+خوێندنی ساڵی نوێمان
+من قوتابییەکی وریام
+گوێ ڕایەڵی مامۆستام
+قوتابخانەم خۆشدەوێ
+چونکە دڵ تیا دەسرەوێ
+کەلوپەلی خاوێنم
+هیچ کات نایانژاکێنم
+هەر بژی قوتابخانە
+کە مەڵبەندی ژیانە
+بژی مامۆستاکانم
+هاوڕێ زیرەکەکانم
+</string>
+    <string name="xwendnawa_id">خوێندنه‌وه‌</string>
+    <string name="rahenan_id">ڕاهێنان</string>
+    <string name="wsha_w_wata_id">وشه‌ و واتا</string>
+    <string name="title_babat">ئەم مرۆڤانە کاردەکەن</string>
+
+</resources>
