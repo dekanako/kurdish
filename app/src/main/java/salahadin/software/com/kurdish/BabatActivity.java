@@ -30,6 +30,7 @@ public class BabatActivity extends AppCompatActivity
     private ImageView mWenayBabat;
     private MediaPlayer mMediaPlayer;
     private boolean isRahenanPressed;
+    ////
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
