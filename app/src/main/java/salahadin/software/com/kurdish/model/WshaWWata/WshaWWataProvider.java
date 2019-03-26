@@ -34,17 +34,18 @@ public class WshaWWataProvider
         wshaWWatas1.add(new WshaWWata("وریا","هۆشیار هشیار"));
         wshaWWatas1.add(new WshaWWata("گوێ ڕایەڵ","گوهدار"));
         wshaWWatas1.add(new WshaWWata("دەسرەوێ","دەحەوێتەوە"));
-        wshaWWatas1.add(new WshaWWata("نایانژاکێنم","نایان هەچڵێنم، تێکیان نادەم"));
+        wshaWWatas1.add(new WshaWWata("نایانژاکێنم","نایان هەچڵێنم\n، تێکیان نادەم"));
         //TODO : wsha w watay sali nweman pirozbet
         mWshaWWatakanList.add(new WshaWWatakan(wshaWWatas1,0,3));
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         List<WshaWWata> wshaWWatas2 = new ArrayList<>();
-
-        wshaWWatas2.add(new WshaWWata("وشه‌","په‌یڤ"));
-        wshaWWatas2.add(new WshaWWata("وریا","هۆشیار هشیار"));
-        wshaWWatas2.add(new WshaWWata("گوێ ڕایەڵ","گوهدار"));
-        wshaWWatas2.add(new WshaWWata("دەسرەوێ","دەحەوێتەوە"));
-        wshaWWatas2.add(new WshaWWata("نایانژاکێنم","نایان هەچڵێنم، تێکیان نادەم"));
+        wshaWWatas2.add(new WshaWWata("فێردەکات","فێری دەکا"));
+        wshaWWatas2.add(new WshaWWata("پزئشک"," نۆژدار، پزیشک"));
+        wshaWWatas2.add(new WshaWWata("نەخۆش","نەساغ"));
+        wshaWWatas2.add(new WshaWWata("نژیار"," وەستای دروستکردنی \nخانوو"));
+        wshaWWatas2.add(new WshaWWata("زەڤی","زەوی، ئەرد"));
+        wshaWWatas2.add(new WshaWWata("نانەوا","نانپێژ"));
+        wshaWWatas2.add(new WshaWWata("دەبرژێنێ(نان دەکا)","دەپێژێت"));
         //TODO : split am_mrovana_kardakan_wshawata_rahenan
         mWshaWWatakanList.add(new WshaWWatakan(wshaWWatas2,0,16));
 

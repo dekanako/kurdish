@@ -8,8 +8,10 @@ import salahadin.software.com.kurdish.model.Chalaki.Chalaki;
 import salahadin.software.com.kurdish.model.Chalaki.ChalakiakanLab;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -28,6 +30,7 @@ public class ChalakiActivity extends AppCompatActivity
     private RecyclerView mRahenanRecyclerView;
     private ChalakiAdapter mAdapter;
     private ImageView imageView;
+    private MediaPlayer mMediaPlayer;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -74,6 +77,33 @@ public class ChalakiActivity extends AppCompatActivity
         }
 
     }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        getMenuInflater().inflate(R.menu.menu_play_sound,menu);
+        return true;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     public class ChalakiAdapter extends RecyclerView.Adapter<ChalakiAdapter.ChalakiViewHolder>
     {

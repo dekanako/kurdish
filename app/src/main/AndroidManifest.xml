@@ -22,8 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".WshawWataActivty"
-            android:parentActivityName=".BabatActivity" />
+            android:name=".WshawWataActivty" />
     </application>
 
 </manifest>

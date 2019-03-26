@@ -43,16 +43,16 @@ public class BabatsProvider
 
     public static List<WshaWWata> getWshaWwatas2()
     {
-        List<WshaWWata> wshaWWatas1 = new ArrayList<>();
+        List<WshaWWata> wshaWWatas2 = new ArrayList<>();
 
-        wshaWWatas1.add(new WshaWWata("فێردەکات","فێری دەکا"));
-        wshaWWatas1.add(new WshaWWata("پزئشک"," نۆژدار، پزیشک"));
-        wshaWWatas1.add(new WshaWWata("نەخۆش","نەساغ"));
-        wshaWWatas1.add(new WshaWWata("نژیار"," وەستای دروستکردنی خانوو"));
-        wshaWWatas1.add(new WshaWWata("زەڤی","زەوی، ئەرد"));
-        wshaWWatas1.add(new WshaWWata("نانەوا","نانپێژ"));
-        wshaWWatas1.add(new WshaWWata("دەبرژێنێ(نان دەکا)","دەپێژێت"));
-        return wshaWWatas1;
+        wshaWWatas2.add(new WshaWWata("فێردەکات","فێری دەکا"));
+        wshaWWatas2.add(new WshaWWata("پزئشک"," نۆژدار، پزیشک"));
+        wshaWWatas2.add(new WshaWWata("نەخۆش","نەساغ"));
+        wshaWWatas2.add(new WshaWWata("نژیار"," وەستای دروستکردنی خانوو"));
+        wshaWWatas2.add(new WshaWWata("زەڤی","زەوی، ئەرد"));
+        wshaWWatas2.add(new WshaWWata("نانەوا","نانپێژ"));
+        wshaWWatas2.add(new WshaWWata("دەبرژێنێ(نان دەکا)","دەپێژێت"));
+        return wshaWWatas2;
     }
 
     public static List<WshaWWata> getWshaWwatas3()
