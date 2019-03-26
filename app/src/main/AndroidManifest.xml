@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ChalakiActivity"></activity>
+        <activity android:name=".StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ChalakiActivity" />
         <activity android:name=".SpecialRahenanActivity" />
         <activity android:name=".RahenanActivity" />
         <activity android:name=".SpecialBabatActivity" />
@@ -21,8 +28,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".WshawWataActivty" />
+        <activity android:name=".WshawWataActivty" />
         <activity android:name=".VidioPlayingActivity" />
         <activity android:name=".VideoListAtivity" />
     </application>
