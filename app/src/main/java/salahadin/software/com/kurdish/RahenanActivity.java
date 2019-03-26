@@ -1,13 +1,16 @@
 package salahadin.software.com.kurdish;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -30,6 +33,7 @@ public class RahenanActivity extends AppCompatActivity
     private TextView mRahenanView;
     private int mPageNumber;
     private int mRahenanNumber;
+    private MediaPlayer mMediaPlayer;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -80,6 +84,62 @@ public class RahenanActivity extends AppCompatActivity
     {
         getMenuInflater().inflate(R.menu.menu_play_sound,menu);
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        switch (item.getItemId())
+        {
+            case R.id.play_sound_menu_item:
+                playAudioOrShowToast();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+
+        }
+
+    }
+
+    private void playAudioOrShowToast()
+    {
+        if (mMediaPlayer == null)
+        {
+            initMediaPlayer();
+        }
+        if (mMediaPlayer != null)
+        {
+            if (!mMediaPlayer.isPlaying())
+            {
+                mMediaPlayer.start();
+            }
+        }
+        else
+        {
+            Toast.makeText(this,"ئه‌م بابه‌ته‌ ده‌نگی نیه‌",Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void initMediaPlayer()
+    {
+        if (mRahenan.getmSound() != 0)
+        {
+            mMediaPlayer = MediaPlayer.create(this,mRahenan.getmSound());
+        }
+
+    }
+
+    @Override
+    protected void onStop()
+    {
+        if (mMediaPlayer != null )
+        {
+            if (mMediaPlayer.isPlaying())
+            {
+                mMediaPlayer.stop();
+            }
+        }
+        super.onStop();
     }
 
 

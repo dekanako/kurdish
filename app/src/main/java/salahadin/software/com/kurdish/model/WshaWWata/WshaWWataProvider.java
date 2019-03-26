@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import salahadin.software.com.kurdish.R;
-import salahadin.software.com.kurdish.model.Rahenan.Rahenanakan;
 
 public class WshaWWataProvider
 {
@@ -60,8 +59,8 @@ public class WshaWWataProvider
         wshaWWatas3.add(new WshaWWata("قوتابی","خوێندکار"));
         wshaWWatas3.add(new WshaWWata("هێمنی","لەسەرخۆ"));
         wshaWWatas3.add(new WshaWWata("گوێ","گوه"));
-
-        mWshaWWatakanList.add(new WshaWWatakan(wshaWWatas3,R.raw.mndalyzhir_wshawatakay,21));
+        //TODO mndalu zhir doesnt have audir
+        mWshaWWatakanList.add(new WshaWWatakan(wshaWWatas3,0,21));
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

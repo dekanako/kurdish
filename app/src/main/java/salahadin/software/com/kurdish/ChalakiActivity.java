@@ -12,10 +12,12 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -86,25 +88,61 @@ public class ChalakiActivity extends AppCompatActivity
         return true;
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        switch (item.getItemId())
+        {
+            case R.id.play_sound_menu_item:
+                playAudioOrShowToast();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
 
+        }
 
+    }
 
+    private void playAudioOrShowToast()
+    {
+        if (mMediaPlayer == null)
+        {
+            initMediaPlayer();
+        }
+        if (mMediaPlayer != null)
+        {
+            if (!mMediaPlayer.isPlaying())
+            {
+                mMediaPlayer.start();
+            }
+        }
+        else
+        {
+            Toast.makeText(this,"ئه‌م بابه‌ته‌ ده‌نگی نیه‌",Toast.LENGTH_SHORT).show();
+        }
+    }
 
+    private void initMediaPlayer()
+    {
+        if (mChalaki.getmSound() != 0)
+        {
+            mMediaPlayer = MediaPlayer.create(this,mChalaki.getmSound());
+        }
 
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @Override
+    protected void onStop()
+    {
+        if (mMediaPlayer != null )
+        {
+            if (mMediaPlayer.isPlaying())
+            {
+                mMediaPlayer.stop();
+            }
+        }
+        super.onStop();
+    }
     public class ChalakiAdapter extends RecyclerView.Adapter<ChalakiAdapter.ChalakiViewHolder>
     {
 
