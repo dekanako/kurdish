@@ -111,6 +111,31 @@ public class RahenanakanLab
         specialQuestions.add(new SpecialQuestions("قا...","چ",context.getDrawable(R.drawable.special_rahenan_photo_qach),0));
         specialQuestions.add(new SpecialQuestions("تیمسا‌...","ح",context.getDrawable(R.drawable.special_rahenan_photo_tmsa7),0));
         specialQuestions.add(new SpecialQuestions("شا‌...","خ",context.getDrawable(R.drawable.special_rahenan_photo_shax),0));
+        specialQuestions.add(new SpecialQuestions("‌...ه‌رزی","د",context.getDrawable(R.drawable.special_rahenan_darzi),0));
+        specialQuestions.add(new SpecialQuestions("‌ك...","ر",context.getDrawable(R.drawable.special_rahenan_kar),0));
+        specialQuestions.add(new SpecialQuestions("‌بازا...","ڕ",context.getDrawable(R.drawable.special_rahenan_bazar),0));
+        specialQuestions.add(new SpecialQuestions("‌ب...ن","ز",context.getDrawable(R.drawable.special_rahenan_bzn),0));
+        specialQuestions.add(new SpecialQuestions("‌ژ...یشك","ژ",context.getDrawable(R.drawable.special_rahenan_zhuzhk),0));
+        specialQuestions.add(new SpecialQuestions("‌پا...س","س",context.getDrawable(R.drawable.special_rahenan_pas),0));specialQuestions.add(new SpecialQuestions("‌...ه‌رزی","د",context.getDrawable(R.drawable.special_rahenan_darzi),0));
+        specialQuestions.add(new SpecialQuestions("‌ڕ...ه‌ش","ش",context.getDrawable(R.drawable.special_rahenan_rash),0));
+        specialQuestions.add(new SpecialQuestions("‌با...ع","ع",context.getDrawable(R.drawable.special_rahenan_ba3),0));
+        specialQuestions.add(new SpecialQuestions("‌ق...","غ",context.getDrawable(R.drawable.special_rahenan_qagh),0));
+        specialQuestions.add(new SpecialQuestions("‌كه...","ك",context.getDrawable(R.drawable.special_rahenan_kaf),0));
+        specialQuestions.add(new SpecialQuestions("‌دا...","ڤ",context.getDrawable(R.drawable.special_rahenan_dav),0));
+        specialQuestions.add(new SpecialQuestions("‌لا...","ق",context.getDrawable(R.drawable.special_rahenan_laq),0));
+        specialQuestions.add(new SpecialQuestions("‌مریش...","ك",context.getDrawable(R.drawable.special_rahenan_mryshk),0));
+        specialQuestions.add(new SpecialQuestions("‌ڕه‌...","گ",context.getDrawable(R.drawable.special_rahenan_rag),0));
+        specialQuestions.add(new SpecialQuestions("‌...مه‌","ل",context.getDrawable(R.drawable.special_rahenan_mal),0));
+        specialQuestions.add(new SpecialQuestions("ده‌...","م",context.getDrawable(R.drawable.special_rahenan_dam),0));
+        specialQuestions.add(new SpecialQuestions("...ه‌رمێ","ه",context.getDrawable(R.drawable.special_rahenan_harme),0));
+        specialQuestions.add(new SpecialQuestions("‌م...ر","ا",context.getDrawable(R.drawable.special_rahenan_mar),0));
+        specialQuestions.add(new SpecialQuestions("ب...راز","ه‌",context.getDrawable(R.drawable.special_rahenan_baraz),0));
+        specialQuestions.add(new SpecialQuestions("شه‌...","و",context.getDrawable(R.drawable.special_rahenan_shaw),0));
+        specialQuestions.add(new SpecialQuestions("گ...زه‌","ۆ",context.getDrawable(R.drawable.special_rahenan_goza),0));
+        specialQuestions.add(new SpecialQuestions("ژ...ر","وو",context.getDrawable(R.drawable.special_rahenan_zhur),0));
+        specialQuestions.add(new SpecialQuestions("مراو...","ی",context.getDrawable(R.drawable.special_rahenan_mrawy),0));
+        specialQuestions.add(new SpecialQuestions("‌د...","ێ",context.getDrawable(R.drawable.special_rahenan_de),0));
+
 
 
         List<SpecialQuestions> specialQuestions1 = new ArrayList<>();
