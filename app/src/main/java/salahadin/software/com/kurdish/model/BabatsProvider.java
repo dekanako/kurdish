@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import salahadin.software.com.kurdish.R;
-import salahadin.software.com.kurdish.model.Rahenan.RahenanakanLab;
+import salahadin.software.com.kurdish.model.WshaWWata.WshaWWata;
 
 
 public class BabatsProvider
@@ -118,15 +118,16 @@ public class BabatsProvider
                 context.getDrawable(R.drawable.my_image)
                 ,3
                 ,"له‌یلا مسته‌فا"
-                ,getWshaWwatas1()));
+                ,getWshaWwatas1()
+                ,0));
 
         babats.add(new Babat(context.getString(R.string.title_babat)
                 ,null,
                 context.getDrawable(R.drawable.asngar),
                 16,
                 null,
-                getWshaWwatas2(),
-                null));
+                getWshaWwatas2()
+                ,0));
 
 
         babats.add(new Babat("منداڵی ژیر",
@@ -135,7 +136,7 @@ public class BabatsProvider
                 ,21
                 ,null
                 ,getWshaWwatas3()
-                , null));
+                , 0));
 
 
 
@@ -146,8 +147,7 @@ public class BabatsProvider
                 ,24
                 ,null
                 ,getWshaWwatas4()
-                ,null,
-                0));
+                ,R.raw.mosiqa));
 
         babats.add(new Babat(
                 "قوتابخانە",
@@ -165,7 +165,7 @@ public class BabatsProvider
                 26,
                 "لەتیف هەڵمەت",
                 getWshaWwatas5(),
-                null));
+                0));
 
 
         return babats;

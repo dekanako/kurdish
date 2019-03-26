@@ -67,7 +67,7 @@ public class ChalakiakanLab
                 ,prsyarakanyChalakiYakamBabat
                 ,"ئەم وشانەی خوارەوە بڕگە بڕگە بکە:"
                 ,0
-                ,0
+                ,R.raw.chalaky1_salynwe
                 ,null));
 
         chalakiakanyYakamBabat.add(new Chalaki(1
@@ -75,7 +75,7 @@ public class ChalakiakanLab
                 ,prsyarakanyChalakiDwamYakamBabat
                 ,"ئەم پیتانەی خوارەوە لێکبدە و ووشەی لێدروست بک :"
                 ,1
-                ,0
+                ,R.raw.chalaky2_salynwe
                 ,null));
 
         chalakiakanyYakamBabat.add(new Chalaki(1
@@ -83,7 +83,7 @@ public class ChalakiakanLab
                 ,prsyarakaniChalakiSeyamYakamBababt
                 ,"ئەم بڕگانەی خوارەوە لێکبدە و وشەی لێدروست بکە:"
                 ,2
-                ,0
+                ,R.raw.chalaky3_salynwe
                 ,null));
 
         chalakiakanList.add(new Chalakiakan(chalakiakanyYakamBabat,3));
@@ -105,7 +105,7 @@ public class ChalakiakanLab
                 prsyarakaniChalaki1Babaty2,
                 ".خوێندکاری خۆشەویست بڕوانە ئەم وێنانە، لە پاشدا ناوەکانیان لە بۆشاییەکان دابنێ",
                 0,
-                0,
+                R.raw.am_mrovana_kardakan_chalaky1,
                 "(شوفێر،سەرتاش،بۆیاغچی، دوکاندار)"));
 
         List<String>prsyarakaniChalaki2babaty2 = new ArrayList<>();
@@ -118,7 +118,7 @@ public class ChalakiakanLab
                 prsyarakaniChalaki2babaty2,
                 "خوێندکاری خۆشەویست بڕوانە ئەم وێنانە، لە پاشدا ناوەکانیان لە بۆشاییەکان دابنێ",
                 1,
-                0,
+                R.raw.am_mrovana_kardakan_chalaky2,
                 null));
 
         chalakiakanList.add(new Chalakiakan(chalaki1Babat2,16));
@@ -128,6 +128,7 @@ public class ChalakiakanLab
         prsyarakaniChalaki1Babaty3.add("تۆ لە خوێندنگە چۆن ڕۆژباش لە مامۆستا و هاوڕێکانت دەکەیت؟");
         prsyarakaniChalaki1Babaty3.add(" قوتابی خۆشەویست ،باسی ئەوەمان بۆ بکە، کە تۆ لەنێوان پشوی وانەکانتدا چی دەکەیت؟");
 
+        //TODO : mndaly Zhir Chalaki harduk
         List<Chalaki>chalakiBabaty3 = new ArrayList<>();
         chalakiBabaty3.add(new Chalaki(0
                 ,null,prsyarakaniChalaki1Babaty3
@@ -158,6 +159,7 @@ public class ChalakiakanLab
                 "قوتابی ژیر، بە یەکێک لە وشەکانی ناو لاکێشەکەی لای خوارەوە"+
                         "\n ئەم بۆشاییانە پڕ بکەوە:",
                 0,
+                //TODO : split mosiqa_wshawata_rahenan_chalaky
                 0,
                 "(گیتاڕ، شمشاڵ، مۆسیقا، خۆشی)"));
         chalakiakanList.add(new Chalakiakan(chalakiBabaty4,24));
@@ -173,6 +175,7 @@ public class ChalakiakanLab
                 prsyarakaniChalaki1babaty5,
                 ":خوێندکاری خۆشەویست، سێجار ئەم ڕستانەی لای خوارەوە لە تێنووسەکەت بنووسەوە",
                 0,
+                //TODO: qutabxana_chalaky1 is miessed
                 0,
                 null
                 ));
@@ -182,7 +185,9 @@ public class ChalakiakanLab
                 null,
                 prsyarakaniChalaki2Babaty5,
                 "ئەم ڕستانەی خواره‌وه‌ چوارجار لە تێنووسەکەت بنووسەوە، پاشان لەگەڵ مامۆستاکەتدا گفتووگۆیان لەسەر بکە",
-                1,0,null));
+                1,
+                R.raw.qutabxana_chalaky2,
+                null));
         chalakiakanList.add(new Chalakiakan(chalakiakanyBabaty5,26));
 
 

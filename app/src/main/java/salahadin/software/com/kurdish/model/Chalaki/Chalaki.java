@@ -14,7 +14,8 @@ public class Chalaki
     private int mSound;
     private String hintyChalaki;
 
-    public Chalaki(int laparayChalaki, Drawable mDrawable, List<String> mPrsyarakan, String titleChalaki, int zhmarayChalaki, int mSound, String hintyChalaki) {
+    public Chalaki(int laparayChalaki, Drawable mDrawable, List<String> mPrsyarakan, String titleChalaki, int zhmarayChalaki, int mSound, String hintyChalaki)
+    {
         this.laparayChalaki = laparayChalaki;
         this.mDrawable = mDrawable;
         this.mPrsyarakan = mPrsyarakan;

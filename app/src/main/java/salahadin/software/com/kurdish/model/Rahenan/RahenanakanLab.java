@@ -45,7 +45,7 @@ public class RahenanakanLab
                         prsyarakan,
                         "خویندکاری خۆشەویست، ئەم ڕستانەی خوارەوە تەواو بکە:"
                         ,0
-                        ,0));
+                        ,0,0));
         rahenans.add(new Rahenanakan(karkrdn,16));
         //////////////////////////////////////////
 
@@ -64,13 +64,14 @@ public class RahenanakanLab
                 ,prsyarakan2
                 ,"وەڵامی ئەم پرسیارانەی خوارەوە بدەوە:"
                 ,0
-                ,21)));
+                ,21,0)));
 
         rahenansQutabyZhir.add(new Rahenan(null
                 ,prsyarakan3
                 ,"ئەم بۆشاییانەی خوارەوە پڕ بکەوە:"
                 ,1
-                ,22));
+                ,22
+                ,0));
         rahenans.add(new Rahenanakan(rahenansQutabyZhir,21));
         ////////////////////////////////////////////////////////
         List<String>prsyarakanyMosiqa = new ArrayList<>();
@@ -78,7 +79,12 @@ public class RahenanakanLab
         prsyarakanyMosiqa.add("٢. شمشاڵ بە چی لێدەدرێت؟");
 
         List<Rahenan> rahenanMosiqa = new ArrayList<>();
-        rahenanMosiqa.add(new Rahenan(null,prsyarakanyMosiqa,"وەڵامی ئەم پرسیارانە بدەوە",0,24));
+        rahenanMosiqa.add(new Rahenan(
+                null,
+                prsyarakanyMosiqa,
+                "وەڵامی ئەم پرسیارانە بدەوە",
+                0,
+                24,0));
         rahenans.add(new Rahenanakan(rahenanMosiqa,24));
         ////////////////////////////////////////////////////////
         List<String>prsyarakanyQutabxana = new ArrayList<>();
@@ -90,6 +96,7 @@ public class RahenanakanLab
         rahenanyQutabxana.add(new Rahenan(null,
                 prsyarakanyQutabxana,
                 "خوێندکاری خۆشەویست، ئەم بۆشاییانەی خوارەوە بە وشەی گونجاو پڕ بکەوە"
+                ,0
                 ,0
                 ,0));
         rahenans.add(new Rahenanakan(rahenanyQutabxana,26));
@@ -111,10 +118,14 @@ public class RahenanakanLab
 
 
 
-        rahenanyYakamBabat
-                .add(new Rahenan(0,"قوتابیانی خۆشەویست، ئەم وشانەی خوارەوە بە پیتێکی گونجاو ته‌واو بكه‌" ,0,specialQuestions));
+        rahenanyYakamBabat.add(new Rahenan(0,
+                "قوتابیانی خۆشەویست، ئەم وشانەی خوارەوە بە پیتێکی گونجاو ته‌واو بكه‌" ,
+                0,
+                specialQuestions,
+                0));
 
-        rahenanyYakamBabat.add(new Rahenan(1,"تکایە، سەیری ئەم وێنانەی لای خوارەوە بکەو بە دەنگ ناوەکانیان دەرببڕە، پاشان بە پیتێکی گونجاو وشەکان تەواو بکە",1,specialQuestions1));
+        rahenanyYakamBabat.add(new Rahenan(1,
+                "تکایە، سەیری ئەم وێنانەی لای خوارەوە بکەو بە دەنگ ناوەکانیان دەرببڕە، پاشان بە پیتێکی گونجاو وشەکان تەواو بکە",1,specialQuestions1,0));
         rahenans.add(new Rahenanakan(rahenanyYakamBabat,3));
     }
 

@@ -17,21 +17,23 @@ public class Rahenan
 
 
 
-    public Rahenan(Drawable mDrawable, List<String> mPrsyarakan, String titleRahenan, int zhmarayRahenan, int laparayRahenan)
+    public Rahenan(Drawable mDrawable, List<String> mPrsyarakan, String titleRahenan, int zhmarayRahenan, int laparayRahenan,int mSound)
     {
         this.mDrawable = mDrawable;
         this.mPrsyarakan = mPrsyarakan;
         this.titleRahenan = titleRahenan;
         this.zhmarayRahenan = zhmarayRahenan;
         this.laparayRahenan = laparayRahenan;
+        this.mSound = mSound;
     }
 
-    public Rahenan(int laparayRahenan, String titleRahenan, int zhmarayRahenan, List<SpecialQuestions> specialQuestionsList)
+    public Rahenan(int laparayRahenan, String titleRahenan, int zhmarayRahenan, List<SpecialQuestions> specialQuestionsList,int mSound)
     {
         this.laparayRahenan = laparayRahenan;
         this.titleRahenan = titleRahenan;
         this.zhmarayRahenan = zhmarayRahenan;
         this.specialQuestionsList = specialQuestionsList;
+        this.mSound = mSound;
     }
 
     public List<SpecialQuestions> getSpecialQuestionsList()

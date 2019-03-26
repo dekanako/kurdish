@@ -4,7 +4,7 @@ import android.graphics.drawable.Drawable;
 
 import java.util.List;
 
-import salahadin.software.com.kurdish.model.Rahenan.Rahenanakan;
+import salahadin.software.com.kurdish.model.WshaWWata.WshaWWata;
 
 public class Babat
 {
@@ -15,23 +15,10 @@ public class Babat
     private String nawyNusar;
     private List<WshaWWata> wshaWWata;
     private int mSound;
-    private Rahenanakan rahenanakans;
     //private String
     public Babat()
     {
 
-    }
-
-    public Babat(String nawyBabat, String contentyBabat, Drawable wenayBabat, int laparayBabat, String nawyNusar, List<WshaWWata> wshaWWata, Rahenanakan rahenan, int mSound)
-    {
-        this.nawyBabat = nawyBabat;
-        this.contentyBabat = contentyBabat;
-        this.wenayBabat = wenayBabat;
-        this.laparayBabat = laparayBabat;
-        this.nawyNusar = nawyNusar;
-        this.wshaWWata = wshaWWata;
-        this.mSound = mSound;
-        this.rahenanakans = rahenan;
     }
 
     public Babat(String nawyBabat, String contentyBabat, Drawable wenayBabat, int laparayBabat, String nawyNusar, List<WshaWWata> wshaWWata)
@@ -44,8 +31,7 @@ public class Babat
         this.wshaWWata = wshaWWata;
     }
 
-
-    public Babat(String nawyBabat, String contentyBabat, Drawable wenayBabat, int laparayBabat, String nawyNusar, List<WshaWWata> wshaWWata, Rahenanakan rahenan)
+    public Babat(String nawyBabat, String contentyBabat, Drawable wenayBabat, int laparayBabat, String nawyNusar, List<WshaWWata> wshaWWata,int mSound)
     {
         this.nawyBabat = nawyBabat;
         this.contentyBabat = contentyBabat;
@@ -53,8 +39,9 @@ public class Babat
         this.laparayBabat = laparayBabat;
         this.nawyNusar = nawyNusar;
         this.wshaWWata = wshaWWata;
-        this.rahenanakans = rahenan;
+        this.mSound = mSound;
     }
+
 
 
 
@@ -66,13 +53,8 @@ public class Babat
         this.mSound = mSound;
     }
 
-    public Rahenanakan getRahenanakans() {
-        return rahenanakans;
-    }
 
-    public void setRahenanakans(Rahenanakan rahenanakans) {
-        this.rahenanakans = rahenanakans;
-    }
+
 
     public List<WshaWWata> getWshaWWata() {
         return wshaWWata;

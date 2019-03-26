@@ -1,4 +1,4 @@
-package salahadin.software.com.kurdish.model;
+package salahadin.software.com.kurdish.model.WshaWWata;
 
 public class WshaWWata
 {

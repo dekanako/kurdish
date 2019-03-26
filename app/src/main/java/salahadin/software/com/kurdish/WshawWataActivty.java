@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import salahadin.software.com.kurdish.model.BabatsProvider;
-import salahadin.software.com.kurdish.model.WshaWWata;
+import salahadin.software.com.kurdish.model.WshaWWata.WshaWWata;
 
 public class WshawWataActivty extends AppCompatActivity
 {

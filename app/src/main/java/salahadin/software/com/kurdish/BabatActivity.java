@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.SubMenu;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -28,9 +29,8 @@ public class BabatActivity extends AppCompatActivity
     private TextView mNawyBabat;
     private TextView mContentyBabat;
     private ImageView mWenayBabat;
-    private MediaPlayer mMediaPlayer;
     private boolean isRahenanPressed;
-    ////
+    private MediaPlayer mMediaPlayer;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -73,11 +73,28 @@ public class BabatActivity extends AppCompatActivity
             for (int z = 0;z<sizeChalaki;z++)
             {
                 int num = chalakis.get(z).getZhmarayChalaki()  + 1;
+                //getConvertedNumber();
                 subMenu.add(Menu.NONE,z,Menu.NONE," چالاكی " + num);
             }
         }
         return true;
     }
+
+    private String getConvertedNumber(int number)
+    {
+        switch (number)
+        {
+            case 1:
+                return "١";
+            case 2:
+                return "٢";
+            case 3:
+                return "٣";
+
+        }
+        return null;
+    }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item)
     {
@@ -89,6 +106,8 @@ public class BabatActivity extends AppCompatActivity
                 startActivity(intent);
                 return true;
             case R.id.sound_id:
+                playAudioOrShowToast();
+
                 return true;
             case 123:
                 isRahenanPressed = true;
@@ -114,6 +133,34 @@ public class BabatActivity extends AppCompatActivity
                 }
 
                 return true;
+        }
+
+    }
+
+    private void playAudioOrShowToast()
+    {
+        if (mMediaPlayer == null)
+        {
+            initMediaPlayer();
+        }
+        if (mMediaPlayer != null)
+        {
+            if (!mMediaPlayer.isPlaying())
+            {
+                mMediaPlayer.start();
+            }
+        }
+        else
+        {
+            Toast.makeText(this,"ئه‌م بابه‌ته‌ ده‌نگی نیه‌",Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void initMediaPlayer()
+    {
+        if (mBabat.getmSound() != 0)
+        {
+            mMediaPlayer = MediaPlayer.create(this,mBabat.getmSound());
         }
 
     }
