@@ -23,6 +23,8 @@
         </activity>
         <activity
             android:name=".WshawWataActivty" />
+        <activity android:name=".VidioPlayingActivity" />
+        <activity android:name=".VideoListAtivity" />
     </application>
 
 </manifest>
