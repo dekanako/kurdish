@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import salahadin.software.com.kurdish.model.BabatsProvider;
 import salahadin.software.com.kurdish.model.WshaWWata.WshaWWata;
+import salahadin.software.com.kurdish.model.WshaWWata.WshaWWataProvider;
 
 public class WshawWataActivty extends AppCompatActivity
 {
@@ -27,9 +28,8 @@ public class WshawWataActivty extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wshaw_wata_activty);
         mPage = getIntent().getIntExtra(Intent.EXTRA_INTENT,0);
-
         mRecyclerView = (RecyclerView)findViewById(R.id.list_wsha_wata);
-        mAdapter = new WshaWwataAdapter(BabatsProvider.getBabat(mPage).getWshaWWata());
+        mAdapter = new WshaWwataAdapter(WshaWWataProvider.getInstance().getWshawWatakan(mPage).getWshaWWatas());
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setAdapter(mAdapter);

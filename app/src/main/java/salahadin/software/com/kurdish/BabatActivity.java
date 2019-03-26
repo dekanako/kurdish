@@ -101,13 +101,13 @@ public class BabatActivity extends AppCompatActivity
         switch (item.getItemId())
         {
             case R.id.wsha_wata_menu_id:
+                System.out.println("TESTTTT " + mPage);
                 Intent intent = new Intent(this,WshawWataActivty.class);
                 intent.putExtra(Intent.EXTRA_INTENT,mPage);
                 startActivity(intent);
                 return true;
             case R.id.sound_id:
                 playAudioOrShowToast();
-
                 return true;
             case 123:
                 isRahenanPressed = true;

@@ -6,10 +6,20 @@ public class WshaWWatakan
 {
     private List<WshaWWata> wshaWWatas;
     private int mSound;
+    private int mPage;
 
-    public WshaWWatakan(List<WshaWWata> wshaWWatas, int mSound) {
+    public int getmPage() {
+        return mPage;
+    }
+
+    public void setmPage(int mPage) {
+        this.mPage = mPage;
+    }
+
+    public WshaWWatakan(List<WshaWWata> wshaWWatas, int mSound, int mPage) {
         this.wshaWWatas = wshaWWatas;
         this.mSound = mSound;
+        this.mPage = mPage;
     }
 
     public List<WshaWWata> getWshaWWatas() {
