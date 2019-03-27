@@ -60,7 +60,7 @@ public class ChalakiActivity extends AppCompatActivity
         mPrsyarTextView = findViewById(R.id.prsyar_chalaki_title_id);
         mHintTextView = findViewById(R.id.hint_chalaki_id);
 
-        mChalakiTextView.append(mChalaki.getZhmarayChalaki()+"");
+        mChalakiTextView.append(UtilClass.convertToArabicNumber(mChalaki.getZhmarayChalaki()+ 1));
         mHintTextView.setText(mChalaki.getHintyChalaki());
         mPrsyarTextView.setText(mChalaki.getTitleChalaki());
         initChalakiList();

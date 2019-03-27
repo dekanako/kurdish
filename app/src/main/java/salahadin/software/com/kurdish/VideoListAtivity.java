@@ -17,7 +17,8 @@ import salahadin.software.com.kurdish.model.VideoM.VedioModel;
 import salahadin.software.com.kurdish.model.VideoM.VedioProvider;
 
 
-public class VideoListAtivity extends AppCompatActivity {
+public class VideoListAtivity extends AppCompatActivity
+{
 
     private RecyclerView mVediosRecyclerView;
 
@@ -27,11 +28,30 @@ public class VideoListAtivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video_list_ativity);
 
-        mVediosRecyclerView = findViewById(R.id.vedios_list);
-        mVediosRecyclerView.setHasFixedSize(true);
-        mVediosRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        mVediosRecyclerView.setAdapter(new VideoListAdapter(VedioProvider.getInstance().getmVideoList()));
+    }
 
+    public void startListOfBabats(View view)
+    {
+        startVedio(R.raw.zhmaray_kurdi);
+    }
+
+    private void startVedio(int soundId)
+    {
+        Intent i = new Intent(getBaseContext(), VidioPlayingActivity.class);
+        i.putExtra(Intent.EXTRA_INTENT,soundId);
+        startActivity(i);
+    }
+
+    public void startAlphuBeSee(View view)
+    {
+    }
+
+    public void startAlphuBeYak(View view)
+    {
+    }
+
+    public void startZhmarakan(View view)
+    {
     }
 
     public class VideoListAdapter extends RecyclerView.Adapter<VideoListAdapter.VideoListViewHolder>

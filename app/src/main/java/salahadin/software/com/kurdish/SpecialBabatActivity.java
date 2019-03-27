@@ -42,7 +42,7 @@ public class SpecialBabatActivity extends AppCompatActivity {
             SubMenu subMenu = menu.addSubMenu(Menu.NONE, 123, Menu.NONE, "ڕاهێنانه‌كان");
             for (int z = 0; z < size; z++) {
                 int num = rahenans.get(z).getZhmarayRahenan() + 1;
-                subMenu.add(Menu.NONE, z, Menu.NONE, "ڕاهێنانی " + num);
+                subMenu.add(Menu.NONE,z,Menu.NONE,"ڕاهێنانی " + UtilClass.convertToArabicNumber(num) );
             }
         }
         int sizeChalaki = ChalakiakanLab.getInstance(this).getChalakiakan(mPage).getmChalakiakan().size();
@@ -51,7 +51,7 @@ public class SpecialBabatActivity extends AppCompatActivity {
             SubMenu subMenu = menu.addSubMenu(Menu.NONE, 321, Menu.NONE, "چالاكیه‌كان");
             for (int z = 0; z < sizeChalaki; z++) {
                 int num = chalakis.get(z).getZhmarayChalaki() + 1;
-                subMenu.add(Menu.NONE, z, Menu.NONE, " چالاكی " + num);
+                subMenu.add(Menu.NONE,z,Menu.NONE," چالاكی " + UtilClass.convertToArabicNumber(num));
             }
         }
         return true;

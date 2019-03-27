@@ -49,7 +49,7 @@ public class RahenanActivity extends AppCompatActivity
         mRahenan = RahenanakanLab.getInstance(this).getRahenanakan(mRahenanNumber).getRahenans().get(mPageNumber);
 
         mTitleTextView.setText(mRahenan.getTitleRahenan());
-        mRahenanView.append(mRahenan.getZhmarayRahenan()+1 + "");
+        mRahenanView.append(UtilClass.convertToArabicNumber(mRahenan.getZhmarayRahenan()+1));
 
         if (mRahenan.getSpecialQuestionsList() == null)
         {

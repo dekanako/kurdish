@@ -62,7 +62,7 @@ public class BabatActivity extends AppCompatActivity
             for (int z = 0;z<size;z++)
             {
                 int num = rahenans.get(z).getZhmarayRahenan() + 1;
-                subMenu.add(Menu.NONE,z,Menu.NONE,"ڕاهێنانی " + num );
+                subMenu.add(Menu.NONE,z,Menu.NONE,"ڕاهێنانی " + UtilClass.convertToArabicNumber(num) );
             }
         }
         int sizeChalaki = ChalakiakanLab.getInstance(this).getChalakiakan(mPage).getmChalakiakan().size();
@@ -73,27 +73,13 @@ public class BabatActivity extends AppCompatActivity
             for (int z = 0;z<sizeChalaki;z++)
             {
                 int num = chalakis.get(z).getZhmarayChalaki()  + 1;
-                //getConvertedNumber();
-                subMenu.add(Menu.NONE,z,Menu.NONE," چالاكی " + num);
+                subMenu.add(Menu.NONE,z,Menu.NONE," چالاكی " + UtilClass.convertToArabicNumber(num));
             }
         }
         return true;
     }
 
-    private String getConvertedNumber(int number)
-    {
-        switch (number)
-        {
-            case 1:
-                return "١";
-            case 2:
-                return "٢";
-            case 3:
-                return "٣";
 
-        }
-        return null;
-    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item)
@@ -101,7 +87,6 @@ public class BabatActivity extends AppCompatActivity
         switch (item.getItemId())
         {
             case R.id.wsha_wata_menu_id:
-                System.out.println("TESTTTT " + mPage);
                 Intent intent = new Intent(this,WshawWataActivty.class);
                 intent.putExtra(Intent.EXTRA_INTENT,mPage);
                 startActivity(intent);
@@ -125,7 +110,6 @@ public class BabatActivity extends AppCompatActivity
                 }
                 else
                 {
-                    System.out.println("TESTTTT " + mBabat.getLaparayBabat());
                     Intent intent2 = new Intent(this,ChalakiActivity.class);
                     intent2.putExtra(EXTRA_INT,mBabat.getLaparayBabat());
                     intent2.putExtra(Intent.EXTRA_INTENT,item.getItemId());
