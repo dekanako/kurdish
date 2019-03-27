@@ -31,14 +31,13 @@ public class Babat
         this.wshaWWata = wshaWWata;
     }
 
-    public Babat(String nawyBabat, String contentyBabat, Drawable wenayBabat, int laparayBabat, String nawyNusar, List<WshaWWata> wshaWWata,int mSound)
+    public Babat(String nawyBabat, String contentyBabat, Drawable wenayBabat, int laparayBabat, String nawyNusar,int mSound)
     {
         this.nawyBabat = nawyBabat;
         this.contentyBabat = contentyBabat;
         this.wenayBabat = wenayBabat;
         this.laparayBabat = laparayBabat;
         this.nawyNusar = nawyNusar;
-        this.wshaWWata = wshaWWata;
         this.mSound = mSound;
     }
 
