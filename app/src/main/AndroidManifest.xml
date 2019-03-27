@@ -21,13 +21,7 @@
         <activity android:name=".RahenanActivity" />
         <activity android:name=".SpecialBabatActivity" />
         <activity android:name=".BabatActivity" />
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".MainActivity"/>
         <activity android:name=".WshawWataActivty" />
         <activity android:name=".VidioPlayingActivity" />
         <activity android:name=".VideoListAtivity" />
