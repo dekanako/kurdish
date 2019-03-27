@@ -38,7 +38,7 @@ public class BabatActivity extends AppCompatActivity
         setContentView(R.layout.activity_babat);
 
         mPage = getIntent().getIntExtra(Intent.EXTRA_INTENT,0);
-        mBabat = BabatsProvider.getBabat(mPage);
+        mBabat = BabatsProvider.getInstance(this).getBabat(mPage);
 
         mNawyBabat = (TextView) findViewById(R.id.nawy_babat_view);
         mContentyBabat = (TextView)findViewById(R.id.content_view);

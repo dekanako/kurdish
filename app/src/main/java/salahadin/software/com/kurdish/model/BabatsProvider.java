@@ -11,13 +11,25 @@ import salahadin.software.com.kurdish.R;
 
 public class BabatsProvider
 {
-    private static List<Babat> babats = new ArrayList<>();
+    private  List<Babat> babats = new ArrayList<>();
 
     private static BabatsProvider sBabatProvider;
 
+    public static BabatsProvider getInstance(Context context)
+    {
+        if (sBabatProvider == null)
+        {
+            sBabatProvider = new BabatsProvider(context);
+        }
+        return sBabatProvider;
+    }
 
+    public BabatsProvider(Context context)
+    {
+        initBabatakan(context);
+    }
 
-    public static Babat getBabat(int lapara)
+    public  Babat getBabat(int lapara)
     {
         for (int x = 0;x<babats.size();x++)
         {
@@ -30,9 +42,13 @@ public class BabatsProvider
         return null;
     }
 
+    public List<Babat> getBabats()
+    {
+        return babats;
+    }
 
 
-    public static List<Babat> getBabatakan(Context context)
+    public void initBabatakan(Context context)
     {
 
         babats.add(new Babat("ساڵی نوێمان پیرۆز بێ","دەرچووی پۆلی یەکەمم" +
@@ -96,8 +112,6 @@ public class BabatsProvider
                 "لەتیف هەڵمەت",
                 0));
 
-        System.out.println("TESTTT" + babats.size());
-        return babats;
     }
 
 

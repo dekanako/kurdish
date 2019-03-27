@@ -29,7 +29,7 @@ public class SpecialBabatActivity extends AppCompatActivity {
         setContentView(R.layout.activity_special_babat);
 
         mPage = getIntent().getIntExtra(Intent.EXTRA_INTENT, 0);
-        mBabat = BabatsProvider.getBabat(mPage);
+        mBabat = BabatsProvider.getInstance(this).getBabat(mPage);
 
     }
 

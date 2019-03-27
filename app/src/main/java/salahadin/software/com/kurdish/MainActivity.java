@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mAdapter = new BabatakanAdapter(BabatsProvider.getBabatakan(this));
+        mAdapter = new BabatakanAdapter(BabatsProvider.getInstance(this).getBabats());
         mListBabats = (RecyclerView)findViewById(R.id.list);
         mListBabats.setLayoutManager(new LinearLayoutManager(this));
         mListBabats.setAdapter(mAdapter);
