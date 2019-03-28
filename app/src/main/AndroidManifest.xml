@@ -17,7 +17,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".ChalakiActivity" />
-        <activity android:name=".SpecialRahenanActivity" />
         <activity android:name=".RahenanActivity" />
         <activity android:name=".SpecialBabatActivity" />
         <activity android:name=".BabatActivity" />
