@@ -68,14 +68,14 @@ public class BabatsProvider
                 context.getDrawable(R.drawable.my_image)
                 ,3
                 ,"له‌یلا مسته‌فا"
-                ,0));
-
+                ,R.raw.saly_nwe));
+        //TODO i think its  cropped
         babats.add(new Babat(context.getString(R.string.title_babat)
                 ,null,
                 context.getDrawable(R.drawable.asngar),
                 16,
                 null
-                ,0));
+                ,R.raw.am_mrovana_kardakan));
 
 
         babats.add(new Babat("منداڵی ژیر",
@@ -83,7 +83,7 @@ public class BabatsProvider
                 ,context.getDrawable(R.drawable.mndaly_zhir)
                 ,21
                 ,null
-                , 0));
+                , R.raw.mndalyzhir));
 
 
 
@@ -110,7 +110,7 @@ public class BabatsProvider
                 context.getDrawable(R.drawable.qutabxana),
                 26,
                 "لەتیف هەڵمەت",
-                0));
+                R.raw.qutabxana));
 
     }
 

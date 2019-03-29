@@ -95,7 +95,7 @@ public class WshawWataActivty extends AppCompatActivity
     }
 
     @Override
-    protected void onStop()
+    protected void onPause()
     {
         if (mMediaPlayer != null )
         {
@@ -104,7 +104,7 @@ public class WshawWataActivty extends AppCompatActivity
                 mMediaPlayer.stop();
             }
         }
-        super.onStop();
+        super.onPause();
     }
     private class WshaWwataAdapter extends RecyclerView.Adapter<WshaWwataAdapter.WshaWwataViewHolder>
     {

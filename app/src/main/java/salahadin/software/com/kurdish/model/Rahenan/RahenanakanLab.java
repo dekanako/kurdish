@@ -84,7 +84,7 @@ public class RahenanakanLab
                 prsyarakanyMosiqa,
                 "وەڵامی ئەم پرسیارانە بدەوە",
                 0,
-                24,0));
+                24,R.raw.mosiqa_rahenan4942109581945713819));
         rahenans.add(new Rahenanakan(rahenanMosiqa,24));
         ////////////////////////////////////////////////////////
         List<String>prsyarakanyQutabxana = new ArrayList<>();

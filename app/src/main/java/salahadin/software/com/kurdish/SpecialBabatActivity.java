@@ -1,10 +1,12 @@
 package salahadin.software.com.kurdish;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.SubMenu;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -22,6 +24,7 @@ public class SpecialBabatActivity extends AppCompatActivity {
     private Babat mBabat;
     private int mPage;
     private boolean isRahenanPressed;
+    private MediaPlayer mMediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,6 +69,7 @@ public class SpecialBabatActivity extends AppCompatActivity {
                 startActivity(intent);
                 return true;
             case R.id.sound_id:
+                playAudioOrShowToast();
                 return true;
             case 123:
                 isRahenanPressed = true;
@@ -89,5 +93,45 @@ public class SpecialBabatActivity extends AppCompatActivity {
 
                 return true;
         }
+    }
+    private void playAudioOrShowToast()
+    {
+        if (mMediaPlayer == null)
+        {
+            initMediaPlayer();
+        }
+        if (mMediaPlayer != null)
+        {
+            if (!mMediaPlayer.isPlaying())
+            {
+                mMediaPlayer.start();
+            }
+        }
+        else
+        {
+            Toast.makeText(this,"ئه‌م بابه‌ته‌ ده‌نگی نیه‌",Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void initMediaPlayer()
+    {
+        if (mBabat.getmSound() != 0)
+        {
+            mMediaPlayer = MediaPlayer.create(this,mBabat.getmSound());
+        }
+
+    }
+
+    @Override
+    protected void onPause()
+    {
+        if (mMediaPlayer != null )
+        {
+            if (mMediaPlayer.isPlaying())
+            {
+                mMediaPlayer.stop();
+            }
+        }
+        super.onPause();
     }
 }

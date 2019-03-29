@@ -132,7 +132,7 @@ public class ChalakiActivity extends AppCompatActivity
     }
 
     @Override
-    protected void onStop()
+    protected void onPause()
     {
         if (mMediaPlayer != null )
         {
@@ -141,7 +141,7 @@ public class ChalakiActivity extends AppCompatActivity
                 mMediaPlayer.stop();
             }
         }
-        super.onStop();
+        super.onPause();
     }
     public class ChalakiAdapter extends RecyclerView.Adapter<ChalakiAdapter.ChalakiViewHolder>
     {

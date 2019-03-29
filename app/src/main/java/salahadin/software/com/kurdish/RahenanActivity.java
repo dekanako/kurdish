@@ -130,7 +130,7 @@ public class RahenanActivity extends AppCompatActivity
     }
 
     @Override
-    protected void onStop()
+    protected void onPause()
     {
         if (mMediaPlayer != null )
         {
@@ -139,7 +139,7 @@ public class RahenanActivity extends AppCompatActivity
                 mMediaPlayer.stop();
             }
         }
-        super.onStop();
+        super.onPause();
     }
 
 

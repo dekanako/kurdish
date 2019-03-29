@@ -34,8 +34,7 @@ public class WshaWWataProvider
         wshaWWatas1.add(new WshaWWata("گوێ ڕایەڵ","گوهدار"));
         wshaWWatas1.add(new WshaWWata("دەسرەوێ","دەحەوێتەوە"));
         wshaWWatas1.add(new WshaWWata("نایانژاکێنم","نایان هەچڵێنم\n، تێکیان نادەم"));
-        //TODO : wsha w watay sali nweman pirozbet
-        mWshaWWatakanList.add(new WshaWWatakan(wshaWWatas1,0,3));
+        mWshaWWatakanList.add(new WshaWWatakan(wshaWWatas1,R.raw.wshawatta_salynwe_pirozbe,3));
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         List<WshaWWata> wshaWWatas2 = new ArrayList<>();
         wshaWWatas2.add(new WshaWWata("فێردەکات","فێری دەکا"));
@@ -60,7 +59,7 @@ public class WshaWWataProvider
         wshaWWatas3.add(new WshaWWata("هێمنی","لەسەرخۆ"));
         wshaWWatas3.add(new WshaWWata("گوێ","گوه"));
         //TODO mndalu zhir doesnt have audir
-        mWshaWWatakanList.add(new WshaWWatakan(wshaWWatas3,0,21));
+        mWshaWWatakanList.add(new WshaWWatakan(wshaWWatas3,R.raw.mndalyzhir_wshawatakay73864921122469874138,21));
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -72,7 +71,7 @@ public class WshaWWataProvider
         wshaWWatas4.add(new WshaWWata("زەماوەند","شاهی"));
         wshaWWatas4.add(new WshaWWata("بە تەنیا","بتنێ"));
 
-        mWshaWWatakanList.add(new WshaWWatakan(wshaWWatas4,0,24));
+        mWshaWWatakanList.add(new WshaWWatakan(wshaWWatas4,R.raw.mosiqa_wshawata,24));
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
