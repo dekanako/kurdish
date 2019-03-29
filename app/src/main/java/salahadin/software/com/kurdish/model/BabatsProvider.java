@@ -24,7 +24,7 @@ public class BabatsProvider
         return sBabatProvider;
     }
 
-    public BabatsProvider(Context context)
+    private BabatsProvider(Context context)
     {
         initBabatakan(context);
     }
@@ -51,7 +51,7 @@ public class BabatsProvider
     public void initBabatakan(Context context)
     {
 
-        babats.add(new Babat("ساڵی نوێمان پیرۆز بێ","دەرچووی پۆلی یەکەمم" +
+        babats.add(new Babat("ساڵی نوێمان پیرۆز بێ","دەرچووی پۆلی یەکەمم \n" +
                 "وا لە پۆلی دووەمم\n" +
                 "       یاخوا پیرۆز بێ لێمان\n" +
                 "خوێندنی ساڵی نوێمان\n" +
@@ -100,7 +100,7 @@ public class BabatsProvider
                 "قوتابخانە زۆر خۆشە\n" +
                         "مەڵبەندی بیرو هۆشە\n" +
                         "دەیپارێزم باخچەکەی\n" +
-                        "دەرگا و شووشو و پانجەرەی\n" +
+                        "دەرگا و شووشو و په‌نجەرەی\n" +
                         "قوتابخانە گشت کاتێ\n" +
                         "ڕووناکیمان دەداتێ\n" +
                         "فێرمان دەکا وریا بین\n" +
@@ -113,6 +113,5 @@ public class BabatsProvider
                 R.raw.qutabxana));
 
     }
-
 
 }

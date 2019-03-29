@@ -45,7 +45,8 @@ public class RahenanakanLab
                         prsyarakan,
                         "خویندکاری خۆشەویست، ئەم ڕستانەی خوارەوە تەواو بکە:"
                         ,0
-                        ,0,0));
+                        ,0,
+                R.raw.am_mrovana_kardakan_rahenan1));
         rahenans.add(new Rahenanakan(karkrdn,16));
         //////////////////////////////////////////
 
@@ -64,14 +65,14 @@ public class RahenanakanLab
                 ,prsyarakan2
                 ,"وەڵامی ئەم پرسیارانەی خوارەوە بدەوە:"
                 ,0
-                ,21,0)));
+                ,21,R.raw.mndalyzhir_rahenan1)));
 
         rahenansQutabyZhir.add(new Rahenan(null
                 ,prsyarakan3
                 ,"ئەم بۆشاییانەی خوارەوە پڕ بکەوە:"
                 ,1
                 ,22
-                ,0));
+                ,R.raw.mndalyzhir_rahenan2));
         rahenans.add(new Rahenanakan(rahenansQutabyZhir,21));
         ////////////////////////////////////////////////////////
         List<String>prsyarakanyMosiqa = new ArrayList<>();
@@ -88,17 +89,17 @@ public class RahenanakanLab
         rahenans.add(new Rahenanakan(rahenanMosiqa,24));
         ////////////////////////////////////////////////////////
         List<String>prsyarakanyQutabxana = new ArrayList<>();
-        prsyarakanyQutabxana.add("…...١. قوتابخانە زۆر");
-        prsyarakanyQutabxana.add("……...مەڵبەندی");
-        prsyarakanyQutabxana.add("…………..٢. دەیپارێزم ……..دەرگا و شووسو و");
-        prsyarakanyQutabxana.add("٣. `وتابخانە گشت کاتی…..دەداتێ");
+        prsyarakanyQutabxana.add("١. قوتابخانە زۆر…...");
+        prsyarakanyQutabxana.add(".مەڵبەندی……..");
+        prsyarakanyQutabxana.add(".٢. دەیپارێزم…………. .دەرگا و شووشه‌ و…….");
+        prsyarakanyQutabxana.add("٣. قوتابخانە گشت کاتی…..دەداتێ");
         List<Rahenan> rahenanyQutabxana = new ArrayList<>();
         rahenanyQutabxana.add(new Rahenan(null,
                 prsyarakanyQutabxana,
                 "خوێندکاری خۆشەویست، ئەم بۆشاییانەی خوارەوە بە وشەی گونجاو پڕ بکەوە"
                 ,0
                 ,0
-                ,0));
+                ,R.raw.qutabxana_rahenan));
         rahenans.add(new Rahenanakan(rahenanyQutabxana,26));
         ////////////////////////////////////////////////////////
         List<Rahenan> rahenanyYakamBabat = new ArrayList<>();
@@ -115,7 +116,7 @@ public class RahenanakanLab
         specialQuestions.add(new SpecialQuestions("‌ك...","ر",context.getDrawable(R.drawable.special_rahenan_kar),0));
         specialQuestions.add(new SpecialQuestions("‌بازا...","ڕ",context.getDrawable(R.drawable.special_rahenan_bazar),0));
         specialQuestions.add(new SpecialQuestions("‌ب...ن","ز",context.getDrawable(R.drawable.special_rahenan_bzn),0));
-        specialQuestions.add(new SpecialQuestions("‌ژ...یشك","ژ",context.getDrawable(R.drawable.special_rahenan_zhuzhk),0));
+        specialQuestions.add(new SpecialQuestions("‌...یشك","ژ",context.getDrawable(R.drawable.special_rahenan_zhuzhk),0));
         specialQuestions.add(new SpecialQuestions("‌پا...س","س",context.getDrawable(R.drawable.special_rahenan_pas),0));specialQuestions.add(new SpecialQuestions("‌...ه‌رزی","د",context.getDrawable(R.drawable.special_rahenan_darzi),0));
         specialQuestions.add(new SpecialQuestions("‌ڕ...ه‌ش","ش",context.getDrawable(R.drawable.special_rahenan_rash),0));
         specialQuestions.add(new SpecialQuestions("‌با...ع","ع",context.getDrawable(R.drawable.special_rahenan_ba3),0));

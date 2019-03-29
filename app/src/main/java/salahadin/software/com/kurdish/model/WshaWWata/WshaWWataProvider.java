@@ -30,7 +30,7 @@ public class WshaWWataProvider
         List<WshaWWata> wshaWWatas1 = new ArrayList<>();
 
         wshaWWatas1.add(new WshaWWata("وشه‌","په‌یڤ"));
-        wshaWWatas1.add(new WshaWWata("وریا","هۆشیار هشیار"));
+        wshaWWatas1.add(new WshaWWata("وریا","هۆشیار, هشیار"));
         wshaWWatas1.add(new WshaWWata("گوێ ڕایەڵ","گوهدار"));
         wshaWWatas1.add(new WshaWWata("دەسرەوێ","دەحەوێتەوە"));
         wshaWWatas1.add(new WshaWWata("نایانژاکێنم","نایان هەچڵێنم\n، تێکیان نادەم"));
@@ -44,8 +44,7 @@ public class WshaWWataProvider
         wshaWWatas2.add(new WshaWWata("زەڤی","زەوی، ئەرد"));
         wshaWWatas2.add(new WshaWWata("نانەوا","نانپێژ"));
         wshaWWatas2.add(new WshaWWata("دەبرژێنێ(نان دەکا)","دەپێژێت"));
-        //TODO : split am_mrovana_kardakan_wshawata_rahenan
-        mWshaWWatakanList.add(new WshaWWatakan(wshaWWatas2,0,16));
+        mWshaWWatakanList.add(new WshaWWatakan(wshaWWatas2,R.raw.am_mrovana_kardakan_wshawata,16));
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         List<WshaWWata> wshaWWatas3 = new ArrayList<>();

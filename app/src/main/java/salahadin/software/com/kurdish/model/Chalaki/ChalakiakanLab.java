@@ -94,9 +94,9 @@ public class ChalakiakanLab
                 "ئازاد……...یە\n");
         prsyarakaniChalaki1Babaty2.add("٢. کاوە ئوتومبێل لێدەخوڕێ\n" +
                 "کاوە……...ە\n");
-        prsyarakaniChalaki1Babaty2.add("٣. نەوزاد لە دوکان شت دەفرۆشێ" +
+        prsyarakaniChalaki1Babaty2.add("٣. نەوزاد لە دوکان شت دەفرۆشێ " +
                 "نەوزاد…………..ە\n");
-        prsyarakaniChalaki1Babaty2.add("٤. کارزان مقاست و شانە بەکاردێنێ" +
+        prsyarakaniChalaki1Babaty2.add("٤. کارزان مقاست و شانە بەکاردێنێ " +
                 "کارزان……….ە\n");
 
         List<Chalaki> chalaki1Babat2 = new ArrayList<>();
@@ -125,7 +125,7 @@ public class ChalakiakanLab
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         List<String>prsyarakaniChalaki1Babaty3 = new ArrayList<>();
-        prsyarakaniChalaki1Babaty3.add("تۆ لە خوێندنگە چۆن ڕۆژباش لە مامۆستا و هاوڕێکانت دەکەیت؟");
+        prsyarakaniChalaki1Babaty3.add("تۆ لە خوێندنگە چۆن ڕۆژباش لە مامۆستا\n و هاوڕێکانت دەکەیت؟");
         prsyarakaniChalaki1Babaty3.add(" قوتابی خۆشەویست ،باسی ئەوەمان بۆ بکە، کە تۆ لەنێوان پشوی وانەکانتدا چی دەکەیت؟");
 
 
