@@ -32,7 +32,7 @@ public class VideoListAtivity extends AppCompatActivity
 
     public void startListOfBabats(View view)
     {
-        startVedio(R.raw.zhmaray_kurdi);
+
     }
 
     private void startVedio(int soundId)
@@ -44,14 +44,17 @@ public class VideoListAtivity extends AppCompatActivity
 
     public void startAlphuBeSee(View view)
     {
+
     }
 
     public void startAlphuBeYak(View view)
     {
+        startVedio(R.raw.kurdish_alphabet);
     }
 
     public void startZhmarakan(View view)
     {
+        startVedio(R.raw.zhmaray_kurdi);
     }
 
     public class VideoListAdapter extends RecyclerView.Adapter<VideoListAdapter.VideoListViewHolder>
