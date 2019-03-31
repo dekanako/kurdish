@@ -117,8 +117,8 @@ public class RahenanakanLab
         specialQuestions.add(new SpecialQuestions("‌بازا...","ڕ",context.getDrawable(R.drawable.special_rahenan_bazar),0));
         specialQuestions.add(new SpecialQuestions("‌ب...ن","ز",context.getDrawable(R.drawable.special_rahenan_bzn),0));
         specialQuestions.add(new SpecialQuestions("‌...یشك","ژ",context.getDrawable(R.drawable.special_rahenan_zhuzhk),0));
-        specialQuestions.add(new SpecialQuestions("‌پا...س","س",context.getDrawable(R.drawable.special_rahenan_pas),0));specialQuestions.add(new SpecialQuestions("‌...ه‌رزی","د",context.getDrawable(R.drawable.special_rahenan_darzi),0));
-        specialQuestions.add(new SpecialQuestions("‌ڕ...ه‌ش","ش",context.getDrawable(R.drawable.special_rahenan_rash),0));
+        specialQuestions.add(new SpecialQuestions("‌پا...س","س",context.getDrawable(R.drawable.special_rahenan_pas),0));
+        specialQuestions.add(new SpecialQuestions("‌ڕه‌...","ش",context.getDrawable(R.drawable.special_rahenan_rash),0));
         specialQuestions.add(new SpecialQuestions("‌با...ع","ع",context.getDrawable(R.drawable.special_rahenan_ba3),0));
         specialQuestions.add(new SpecialQuestions("‌ق...","غ",context.getDrawable(R.drawable.special_rahenan_qagh),0));
         specialQuestions.add(new SpecialQuestions("‌كه...","ك",context.getDrawable(R.drawable.special_rahenan_kaf),0));
@@ -126,9 +126,9 @@ public class RahenanakanLab
         specialQuestions.add(new SpecialQuestions("‌لا...","ق",context.getDrawable(R.drawable.special_rahenan_laq),0));
         specialQuestions.add(new SpecialQuestions("‌مریش...","ك",context.getDrawable(R.drawable.special_rahenan_mryshk),0));
         specialQuestions.add(new SpecialQuestions("‌ڕه‌...","گ",context.getDrawable(R.drawable.special_rahenan_rag),0));
-        specialQuestions.add(new SpecialQuestions("‌...مه‌","ل",context.getDrawable(R.drawable.special_rahenan_mal),0));
+        specialQuestions.add(new SpecialQuestions("‌مه...‌","ل",context.getDrawable(R.drawable.special_rahenan_mal),0));
         specialQuestions.add(new SpecialQuestions("ده‌...","م",context.getDrawable(R.drawable.special_rahenan_dam),0));
-        specialQuestions.add(new SpecialQuestions("...ه‌رمێ","ه",context.getDrawable(R.drawable.special_rahenan_harme),0));
+        specialQuestions.add(new SpecialQuestions("...ه‌رمێ","ھ",context.getDrawable(R.drawable.special_rahenan_harme),0));
         specialQuestions.add(new SpecialQuestions("‌م...ر","ا",context.getDrawable(R.drawable.special_rahenan_mar),0));
         specialQuestions.add(new SpecialQuestions("ب...راز","ه‌",context.getDrawable(R.drawable.special_rahenan_baraz),0));
         specialQuestions.add(new SpecialQuestions("شه‌...","و",context.getDrawable(R.drawable.special_rahenan_shaw),0));
@@ -204,10 +204,13 @@ public class RahenanakanLab
                 "قوتابیانی خۆشەویست، ئەم وشانەی خوارەوە بە پیتێکی گونجاو ته‌واو بكه‌" ,
                 0,
                 specialQuestions,
-                0));
+                R.raw.merged_rahenan));
 
         rahenanyYakamBabat.add(new Rahenan(1,
-                "تکایە، سەیری ئەم وێنانەی لای خوارەوە بکەو بە دەنگ ناوەکانیان دەرببڕە، پاشان بە پیتێکی گونجاو وشەکان تەواو بکە",1,specialQuestions1,0));
+
+                "تکایە، سەیری ئەم وێنانەی لای خوارەوە بکەو بە دەنگ ناوەکانیان دەرببڕە، پاشان بە پیتێکی گونجاو وشەکان تەواو بکە",1
+                ,specialQuestions1
+                ,R.raw.merged_rahenan2));
         rahenans.add(new Rahenanakan(rahenanyYakamBabat,3));
     }
 

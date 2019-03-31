@@ -33,8 +33,8 @@ public class VedioProvider
     {
         mVideoList.add(new VedioModel(R.raw.zhmaray_kurdi,"vidio lasar hawreyaty","zhmaray_kurdi"));
         mVideoList.add(new VedioModel(R.raw.kurdish_alphabet,"vidio lasar mine craft","kurdish_alphabet"));
-        /**mVideoList.add(new VedioModel(R.raw.guitar_w_sht,"vidio lasar guitar","guitar_w_sht"));
-        mVideoList.add(new VedioModel(R.raw.guitar_man,"vidio lasar guitr man","mine_craft"));**/
+        mVideoList.add(new VedioModel(R.raw.plestank_vedio,"vidio lasar guitar","plestank_vedio"));
+        mVideoList.add(new VedioModel(R.raw.cholaka_vedio,"vidio lasar guitr man","cholaka_vedio"));
     }
     public String getVedioModel(int link)
     {

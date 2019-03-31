@@ -20,7 +20,6 @@ import salahadin.software.com.kurdish.model.VideoM.VedioProvider;
 public class VideoListAtivity extends AppCompatActivity
 {
 
-    private RecyclerView mVediosRecyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -30,9 +29,9 @@ public class VideoListAtivity extends AppCompatActivity
 
     }
 
-    public void startListOfBabats(View view)
+    public void cholaka(View view)
     {
-
+        startVedio(R.raw.cholaka_vedio);
     }
 
     private void startVedio(int soundId)
@@ -44,7 +43,7 @@ public class VideoListAtivity extends AppCompatActivity
 
     public void startAlphuBeSee(View view)
     {
-
+        startVedio(R.raw.plestank_vedio);
     }
 
     public void startAlphuBeYak(View view)
@@ -56,6 +55,9 @@ public class VideoListAtivity extends AppCompatActivity
     {
         startVedio(R.raw.zhmaray_kurdi);
     }
+
+
+
 
     public class VideoListAdapter extends RecyclerView.Adapter<VideoListAdapter.VideoListViewHolder>
     {
