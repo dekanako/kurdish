@@ -45,12 +45,13 @@ public class ChalakiakanLab
         List<String> prsyarakanyChalakiDwamYakamBabat = new ArrayList<>();
         prsyarakanyChalakiDwamYakamBabat.add("س،ە،ر،د،ا،ر=(   )");
         prsyarakanyChalakiDwamYakamBabat.add("ک،و،ر،د،س،ت،ا،ن=(   )");
-        prsyarakanyChalakiDwamYakamBabat.add("ئ،ا،ڵا،ا=(   )");
+        prsyarakanyChalakiDwamYakamBabat.add("ئ،ا،ڵ،ا=(   )");
         prsyarakanyChalakiDwamYakamBabat.add("گ،ۆ،ر،ا،ن،ی=(   )");
         prsyarakanyChalakiDwamYakamBabat.add("س،ر،وو،د=(   )");
         prsyarakanyChalakiDwamYakamBabat.add("ی،ا،ر،ی=(   )");
         prsyarakanyChalakiDwamYakamBabat.add("ه،ە،ڵ،پ،ە،ر،ک،ێ=(   )");
         prsyarakanyChalakiDwamYakamBabat.add("م،ۆ،س،ی،ق،ا=(   )");
+        prsyarakanyChalakiDwamYakamBabat.add("ز،س،ت،ا،ن=(   )");
         prsyarakanyChalakiDwamYakamBabat.add("ق،و،ت،ا،ب،خ،ا،ن،ە=(   )");
         prsyarakanyChalakiDwamYakamBabat.add("م،ا،م،ۆ،س،ت،ا=(   )");
 
@@ -73,7 +74,7 @@ public class ChalakiakanLab
         chalakiakanyYakamBabat.add(new Chalaki(1
                 , null
                 ,prsyarakanyChalakiDwamYakamBabat
-                ,"ئەم پیتانەی خوارەوە لێکبدە و ووشەی لێدروست بک :"
+                ,"ئەم پیتانەی خوارەوە لێکبدە و ووشەی لێدروست بکه‌:"
                 ,1
                 ,R.raw.chalaky2_salynwe
                 ,null));
@@ -156,10 +157,9 @@ public class ChalakiakanLab
         chalakiBabaty4.add(new Chalaki(24,
                 null,
                 prsyarakaniChalaki1babaty4,
-                "قوتابی ژیر، بە یەکێک لە وشەکانی ناو لاکێشەکەی لای خوارەوە"+
-                        "\n ئەم بۆشاییانە پڕ بکەوە:",
+                "قوتابی ژیر، بە یەکێک لە وشەکانی خوارەوە\n"+
+                        " ئەم بۆشاییانە پڕ بکەوە:",
                 0,
-                //TODO : split mosiqa_wshawata_rahenan_chalaky
                 R.raw.mosiqa_chalaky1,
                 "(گیتاڕ، شمشاڵ، مۆسیقا، خۆشی)"));
         chalakiakanList.add(new Chalakiakan(chalakiBabaty4,24));
@@ -173,7 +173,7 @@ public class ChalakiakanLab
         chalakiakanyBabaty5.add(new Chalaki(0,
                 null,
                 prsyarakaniChalaki1babaty5,
-                ":خوێندکاری خۆشەویست، سێجار ئەم ڕستانەی لای خوارەوە لە تێنووسەکەت بنووسەوە",
+                "خوێندکاری خۆشەویست، سێجار ئەم ڕستانەی لای خوارەوە لە تێنووسەکەت بنووسەوە:",
                 0,
                 R.raw.qutabxana_chalaky1,
                 null

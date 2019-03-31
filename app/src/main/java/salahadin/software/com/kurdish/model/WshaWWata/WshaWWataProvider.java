@@ -38,7 +38,7 @@ public class WshaWWataProvider
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         List<WshaWWata> wshaWWatas2 = new ArrayList<>();
         wshaWWatas2.add(new WshaWWata("فێردەکات","فێری دەکا"));
-        wshaWWatas2.add(new WshaWWata("پزئشک"," نۆژدار، پزیشک"));
+        wshaWWatas2.add(new WshaWWata("پزیشک"," نۆژدار، پزیشک"));
         wshaWWatas2.add(new WshaWWata("نەخۆش","نەساغ"));
         wshaWWatas2.add(new WshaWWata("نژیار"," وەستای دروستکردنی \nخانوو"));
         wshaWWatas2.add(new WshaWWata("زەڤی","زەوی، ئەرد"));

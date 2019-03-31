@@ -36,7 +36,7 @@ public class RahenanakanLab
         prsyarakan.add("٣……... گۆشت دەفرۆشێت");
         prsyarakan.add("٤. جوتیار…..دەکێڵێت");
         prsyarakan.add("٥…….. کورسی دروست دەکات");
-        prsyarakan.add("٦. پزئشک….چارە دەکات");
+        prsyarakan.add("٦. پزیشک….چارە دەکات");
         prsyarakan.add("٧………. دیوار دروستدەکات");
         prsyarakan.add("٨. مامۆستا خوێندکار…….دەکات");
 
